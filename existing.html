@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BobsBurgers</title>
+    <style>
+      body {
+        background: linear-gradient(to top, #f8df20 0%, #fef9d7 100%);
+      }
+      h1 {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .family {
+        display: block;
+        margin: 0 auto;
+        border: 4px solid #e9111c;
+        border-style: groove;
+        border-radius: 30%;
+      }
+      .family:hover {
+        transition: all 200ms ease-in-out;
+        box-shadow: 5px 7px 15px 5px #e9111c;
+        border-radius: 30%;
+      }
+
+      .titleshow {
+        color: #e9111c;
+        font-size: larger;
+        font-weight: 600;
+      }
+
+      .meet {
+        text-align: center;
+        font-weight: 400;
+        font-size: 28px;
+        background-color: #f8df20;
+      }
+      .bob {
+        margin-left: 45px;
+        margin-right: 45px;
+      }
+      .bob:hover {
+        transition: all 200ms ease-in-out;
+        background-color: #442222;
+        border-radius: 30%;
+      }
+      .hibob {
+        margin-left: 107px;
+        font-size: 25px;
+        font-weight: 200;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        border-radius: 20%;
+        box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.3);
+      }
+      .hibob:hover {
+        cursor: pointer;
+      }
+
+      .linda {
+        margin-right: 100px;
+      }
+      .linda:hover {
+        transition: all 200ms ease-in-out;
+        background-color: #e9111ca6;
+        border-radius: 30%;
+      }
+      .hilinda {
+        margin-left: 160px;
+        font-size: 25px;
+        font-weight: 200;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        border-radius: 20%;
+        box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.3);
+      }
+      .hilinda:hover {
+        cursor: pointer;
+      }
+
+      .tina {
+        margin-right: 115px;
+        padding: 10px 35px;
+      }
+      .tina:hover {
+        transition: all 200ms ease-in-out;
+        background-color: #11ace9;
+        border-radius: 30%;
+      }
+      .hitina {
+        margin-left: 180px;
+        font-size: 25px;
+        font-weight: 200;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        border-radius: 20%;
+        box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.3);
+      }
+      .hitina:hover {
+        cursor: pointer;
+      }
+      .gene {
+        margin-right: 85px;
+      }
+      .gene:hover {
+        transition: all 200ms ease-in-out;
+        background-color: #e9c111;
+        border-radius: 30%;
+      }
+      .higene {
+        margin-left: 197px;
+        font-size: 25px;
+        font-weight: 200;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        border-radius: 20%;
+        box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.3);
+      }
+      .higene:hover {
+        cursor: pointer;
+      }
+      .louise:hover {
+        transition: all 200ms ease-in-out;
+        background-color: #e91188;
+        border-radius: 30%;
+      }
+      .hilouise {
+        margin-left: 170px;
+        font-size: 25px;
+        font-weight: 200;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        border-radius: 20%;
+        box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.3);
+      }
+      .hilouise {
+        cursor: pointer;
+      }
+      .showTitle {
+        color: #e9111c;
+        font-style: italic;
+        font-size: larger;
+        font-weight: 500;
+      }
+      .showinfo {
+        text-align: center;
+        font-size: 20px;
+      }
+      .fam {
+        display: block;
+        margin: 0 auto;
+      }
+      .board {
+        display: inline;
+        margin: 0 auto;
+      }
+      .burgerlink {
+        text-align: center;
+        font-size: 15px;
+      }
+      .burgerhyperlink {
+        color: #e9111c;
+      }
+      .burgerplate {
+        margin-left: 40px;
+      }
+      .marshmellow {
+        margin-left: 10px;
+      }
+      .jimmyj {
+        margin-left: 30px;
+      }
+      .codedby {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS";
+        font-size: 25px;
+        text-align: center;
+      }
+      .watchnow {
+        border-radius: 30%;
+        color: white;
+        background-color: #e9111c;
+        display: block;
+        margin: 0 auto;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 28px;
+        box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.3);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Bob%27s_Burgers_logo.svg"
+        alt="burgersign"
+        width="500"
+      />
+    </h1>
+    <h2>
+      <img
+        src="https://img.huffingtonpost.com/asset/58bec69c1500003716abda64.jpeg?ops=scalefit_720_noupscale"
+        alt="familypic"
+        width="400"
+        class="family"
+      />
+    </h2>
+
+    <p class="meet">
+      <strong>Meet the Belchers</strong>
+    </p>
+
+    <img
+      src="https://static.wikia.nocookie.net/bobsburgerpedia/images/a/af/Bob_Belcher_Profile_Base.webp/revision/latest?cb=20240123100438"
+      alt="bob"
+      width="200"
+      class="bob"
+    />
+
+    <img
+      src="https://static.wikia.nocookie.net/bobsburgerpedia/images/4/45/Linda_Belcher_new.webp/revision/latest?cb=20231209231636"
+      alt="linda"
+      width="195"
+      class="linda"
+    />
+    <img
+      src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/003190fe-69ae-4c44-a103-4af411c991ca/dfe4g5v-030003fd-8aab-4646-8906-fd5cfb4d8622.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzAwMzE5MGZlLTY5YWUtNGM0NC1hMTAzLTRhZjQxMWM5OTFjYVwvZGZlNGc1di0wMzAwMDNmZC04YWFiLTQ2NDYtODkwNi1mZDVjZmI0ZDg2MjIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.lyzn7TpMoPlC9tX9UtL1tzR3w5u6QUoKA_TFQjGTPHQ"
+      alt="tina"
+      width="80"
+      class="tina"
+    />
+    <img
+      src="https://static.wikia.nocookie.net/p__/images/b/b7/Gene_Belcher.png/revision/latest?cb=20160405195315&path-prefix=protagonist"
+      alt="gene"
+      width="190"
+      class="gene"
+    />
+    <img
+      src="https://static.wikia.nocookie.net/bobsburgerpedia/images/3/31/Louise_Belcher_new.webp/revision/latest?cb=20231110025039"
+      alt="louise"
+      width="180"
+      class="louise"
+    />
+    <br />
+    <button id="button1" class="hibob">
+      <strong>BOB</strong>
+    </button>
+    <button id="button2" class="hilinda">
+      <strong>LINDA</strong>
+    </button>
+    <button id="button3" class="hitina">
+      <strong>TINA</strong>
+    </button>
+    <button id="button4" class="higene">
+      <strong>GENE</strong>
+    </button>
+    <button id="button5" class="hilouise">
+      <strong>LOUISE</strong>
+    </button>
+
+    <p class="showinfo">
+      <span class="showTitle"><strong>Bob's Burgers</strong></span> is an
+      American animated sitcom created by Loren Bouchard for the Fox
+      Broadcasting Company. It is centered on the Belcher family<br />(parents
+      Bob and Linda and their three children, Tina, Gene, and Louise) who run a
+      burger restaurant and often go on adventures of many kinds.
+    </p>
+    <img
+      src="https://i.cdn.turner.com/adultswim/big/img/2014/05/21/BobsBurgers.png"
+      alt="fam"
+      width="400px"
+      class="fam"
+    />
+    <div class="burgerlink">
+      Visit
+      <a
+        href="https://en.wikipedia.org/wiki/Bob%27s_Burgers"
+        target="_blank"
+        class="burgerhyperlink"
+      >
+        Bob's Burgers🍔</a
+      >
+      for more info!
+    </div>
+    <hr />
+    <img
+      src="https://static.wikia.nocookie.net/bobsburgerpedia/images/a/a2/Harold_and_Edith_Cranwrinkle.png/revision/latest/scale-to-width-down/176?cb=20130305235630"
+      alt="edith"
+      width="90"
+    />
+    <img
+      src="https://upload.wikimedia.org/wikipedia/en/a/a4/Bob_Belcher_3.png"
+      alt="burgerplate"
+      class="burgerplate"
+    />
+
+    <img
+      src="https://images.fineartamerica.com/images/artworkimages/medium/3/bobs-burgers-marshmallow-pride-travel-reynolds-paul-transparent.png"
+      alt="marshmellow"
+      class="marshmellow"
+      width="205"
+    />
+
+    <img
+      src="https://i.pinimg.com/736x/80/12/15/8012158833df8f4efcbcc0027abeaf82.jpg"
+      alt="burgerboard"
+      width="300px"
+      class="board"
+    />
+    <img
+      src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4d105d1f-d8cf-4be9-83f0-5be2c00e8fee/d9zifle-8b4d0865-d35f-4d51-809e-971bbbd8e3e8.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzRkMTA1ZDFmLWQ4Y2YtNGJlOS04M2YwLTViZTJjMDBlOGZlZVwvZDl6aWZsZS04YjRkMDg2NS1kMzVmLTRkNTEtODA5ZS05NzFiYmJkOGUzZTgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Q1B_h1re0MjiaOX_ds2R9BMj1OEHo2PR11LKiYbSosM"
+      alt="ketchupmustard"
+      width="195"
+    />
+    <img
+      src="https://static.wikia.nocookie.net/bobsburgerpedia/images/a/a6/Jairo2.png/revision/latest?cb=20130306195917"
+      alt="jiro"
+      width="185"
+      class="jiro"
+    />
+
+    <img
+      src="https://static.wikia.nocookie.net/bobsburgerpedia/images/4/42/Jimmy_Pesto_Jr..png/revision/latest?cb=20130308041919"
+      alt="jimmyj"
+      width="60"
+      class="jimmyj"
+    />
+    <br />
+    <button id="button6" class="watchnow"><strong>Watch Now!</strong></button>
+    <p class="codedby">Coded by: Tamia Sims</p>
+    <script>
+      const button1 = document.getElementById("button1");
+      button1.addEventListener("click", function () {
+        alert(
+          "You're my family and I love you, but you're terrible. You're all terrible. - Bob"
+        );
+      });
+
+      const button2 = document.getElementById("button2");
+      button2.addEventListener("click", function () {
+        alert(
+          "When I die I want you to cremate me and throw my ashes in Tom Selleck's face. - Linda"
+        );
+      });
+
+      const button3 = document.getElementById("button3");
+      button3.addEventListener("click", function () {
+        alert(
+          "I'm no hero. I put on my bra one boob at a time like everyone else. - Tina"
+        );
+      });
+
+      const button4 = document.getElementById("button4");
+      button4.addEventListener("click", function () {
+        alert(
+          "You should know when you hold hands with me, you're holding hands with everything I've ever eaten. - Gene"
+        );
+      });
+
+      const button5 = document.getElementById("button5");
+      button5.addEventListener("click", function () {
+        alert(
+          "Everyone who's got a knife, grab it! It's a fight to the death! - Louise"
+        );
+      });
+
+      const button6 = document.getElementById("button6");
+      button6.addEventListener("click", function () {
+        let name = prompt("What's your name?");
+        let hulu = prompt("Do you have a hulu subscription?");
+        hulu = hulu.toLowerCase();
+        hulu = hulu.trim();
+
+        if (hulu === "yes") {
+          alert("Hi " + name + ", go watch Bob's Burgers!🍔");
+        } else {
+          alert(
+            "Hi " + name + ", get a hulu subscription to watch Bob's Burgers!🍔"
+          );
+        }
+      });
+    </script>
+  </body>
+</html>
